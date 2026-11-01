@@ -1,0 +1,9 @@
+app:
+  admin:
+    username: admin
+    password: admin
+  jwt:
+    secret: test-jwt-secret-change-before-production-32chars
+    expiration-seconds: 3600
+  cors:
+    allowed-origins: http://localhost:5173

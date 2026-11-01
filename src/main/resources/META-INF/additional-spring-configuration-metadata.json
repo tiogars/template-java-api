@@ -1,0 +1,29 @@
+{
+  "properties": [
+    {
+      "name": "app.admin.username",
+      "type": "java.lang.String",
+      "description": "Admin username"
+    },
+    {
+      "name": "app.admin.password",
+      "type": "java.lang.String",
+      "description": "Admin password"
+    },
+    {
+      "name": "app.jwt.secret",
+      "type": "java.lang.String",
+      "description": "JWT secret"
+    },
+    {
+      "name": "app.jwt.expiration-seconds",
+      "type": "java.lang.String",
+      "description": "JWT expiration in seconds"
+    },
+    {
+      "name": "app.cors.allowed-origins",
+      "type": "java.lang.String",
+      "description": "Allowed CORS origins separated by commas"
+    }
+  ]
+}
