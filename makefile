@@ -6,6 +6,7 @@ help:
 	@echo "  test       Run tests"
 	@echo "  checkstyle Run checkstyle"
 	@echo "  clean      Clean the project"
+	@echo "  site       Generate project site"
 
 test:
 	mvn -f pom.xml test
@@ -21,3 +22,6 @@ run:
 
 clean:
 	mvn -f pom.xml clean
+
+site:
+	mvn -f pom.xml site
