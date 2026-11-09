@@ -34,6 +34,8 @@ jobs:
 
       - name: Package application
         run: mvn -B -ntp package -DskipTests -Dcheckstyle.skip=true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Normalize jar name
         run: |

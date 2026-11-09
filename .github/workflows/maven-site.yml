@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  packages: read
 
 concurrency:
   group: github-pages
@@ -32,6 +33,8 @@ jobs:
 
       - name: Build, test and generate site
         run: mvn --batch-mode --no-transfer-progress clean verify site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Check generated site
         run: test -s target/site/index.html
